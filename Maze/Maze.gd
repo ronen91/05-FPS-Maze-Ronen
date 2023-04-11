@@ -38,6 +38,8 @@ var width = 20  						# width of map (in tiles)
 var height = 12  						# height of map (in tiles)
 
 func _ready():
+	var my_seed = "C220 Is the Best!"
+	seed(my_seed.hash())	
 	make_maze()
 	
 func check_neighbors(cell, unvisited):
